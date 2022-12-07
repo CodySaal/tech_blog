@@ -8,13 +8,17 @@ router.get("/", async (req, res) => {
         })
         blogs = blogs.map(blog => blog.get({ plain: true }))
         res.render("home", {
-            blogs
+            blogs,
+            logged_in: req.session.logged_in
         })
     } catch(err) {
         res.status(500).json(err)
     }
-})
+});
 
-
+router.get("/login", (req, res) => {
+    res.render("login")
+    
+});
 
 module.exports = router;
