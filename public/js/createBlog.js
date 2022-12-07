@@ -1,5 +1,5 @@
 const createBlog = document.getElementById("createBlog");
-
+console.log(createBlog)
 createBlog.addEventListener("submit", (event) => {
     event.preventDefault()
     const {
@@ -12,7 +12,7 @@ createBlog.addEventListener("submit", (event) => {
         content: contentInput.value
     }
 
-    fetch("api/blogs", {
+    fetch("/api/blogs", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
