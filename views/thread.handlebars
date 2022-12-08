@@ -14,7 +14,7 @@
   </div>
   <div class="card-body text-dark">
     <p class="card-text">{{content}}</p>
-    <p class="card-text">{{user.username}}, {{format_date date_created}}</p>
+    <p class="card-text">- {{user.username}}, {{format_date date_created}}</p>
   </div>
 </div>
 {{/each}}
@@ -24,7 +24,7 @@
   <div class="card-header navbar-dark bg-dark d-flex justify-content-between align-items-center text-light">
   </div>
     <div class="card-body">
-        <form id="comment">
+        <form id="comment" data-blogid="{{blog.id}}">
             <div class="mb-3 text-dark">
                 <label for="content" class="form-label">Comment</label>
                 <textarea type="text" class="form-control" name="content"></textarea>
