@@ -1,5 +1,5 @@
 const createBlog = document.getElementById("createBlog");
-console.log(createBlog)
+
 createBlog.addEventListener("submit", (event) => {
     event.preventDefault()
     const {

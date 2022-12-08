@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Blog, Comment, User } = require("../models");
 const withAuth = require("../utils/auth")
 
+// Renders home screen
 router.get("/", async (req, res) => {
     try {
         let blogs = await Blog.findAll({
@@ -17,6 +18,7 @@ router.get("/", async (req, res) => {
     }
 });
 
+// Renders dashboard
 router.get("/dashboard", withAuth, async (req, res) => {
     try {
         let blogs = await Blog.findAll({
@@ -36,6 +38,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
     }
 })
 
+// Renders page to create new post
 router.get("/createblog", withAuth, async (req, res) => {
     try {
         let user = await User.findOne({
@@ -54,6 +57,7 @@ router.get("/createblog", withAuth, async (req, res) => {
     }
 })
 
+// Renders screen to edit old post
 router.get("/editblog/:id", withAuth, async (req, res) => {
     try {
         let blog = await Blog.findOne({
@@ -73,6 +77,7 @@ router.get("/editblog/:id", withAuth, async (req, res) => {
     }
 })
 
+// Renders page to view post thread
 router.get("/blog/:id", async (req, res) => {
     try {
         let blog = await Blog.findOne({
@@ -101,6 +106,7 @@ router.get("/blog/:id", async (req, res) => {
     }
 })
 
+// Renders login/signup page
 router.get("/login", (req, res) => {
     res.render("login")
     
