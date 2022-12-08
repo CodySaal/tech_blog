@@ -30,9 +30,6 @@ from the root of the project. The user can now exit the mysql shell. The user ca
 ```
 npm run seed
 ```
-
-## Usage
-
 To invoke the application the user can run 
 
 ```
@@ -42,6 +39,17 @@ If the user wants to run in a dev environment so the server refreshes after chan
 ```
 npm run watch
 ```
+
+## Usage
+
+Once the user enters the site they can navigate the site using the navbar at the top. Before they can interact with most of the site they will need to either log in or sign up. This can be done by clicking on the log in button. Once on this screen the user can enter their username and password to login or create a new account.
+
+Once logged in the user can view their dashboard where they will find any previous posts they have written. They can click on one of these to edit or delete it. They can also navigate back to the homescreen to view posts written by other bloggers.
+
+If the user clicks on another user's post they will have the option to leave a comment.
+
+After reading their fair share of blogs for the day the user can log out until they are ready for more.
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
