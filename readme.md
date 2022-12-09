@@ -17,7 +17,7 @@ The user can clone the code from the GitHub repo. Once the code is cloned and op
 ```
 npm i
 ```
-The user will also have to create a .env file in order to store their credentials for the connection. The user will have to input  DB_NAME, DB_USER, and DB_PW variables with their credentials as the values. The next step is to run the schema file with mysql. The user will enter their mysql shell and run
+The user will also have to create a .env file in order to store their credentials for the connection. The user will have to input  DB_NAME, DB_USER, DB_PW, and SESSION_SECRET variables with their credentials as the values. The next step is to run the schema file with mysql. The user will enter their mysql shell and run
 ```
 SOURCE db/schema.sql 
 ```
