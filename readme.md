@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The purpose of this project was to practice using the Model-View-Controller paradigm in its architectural structure. Building the project also allowed me to work with Handlebars.js as the templating language. After completing this project I can actually wrap my head around how some other similar sites might be built. This site can be used  to publish articles, blog posts, thoughts and opinions on tech.
 
 ## Table of Contents
 
@@ -51,13 +46,10 @@ If the user clicks on another user's post they will have the option to leave a c
 After reading their fair share of blogs for the day the user can log out until they are ready for more.
 
 
-Provide instructions and examples for use. Include screenshots as needed.
+![Screenshot](assets/tech_blog_screenshot.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[Tech Blog](https://lit-savannah-08132.herokuapp.com/ "Deployed Tech Blog Site")
 
 ## Credits
 
